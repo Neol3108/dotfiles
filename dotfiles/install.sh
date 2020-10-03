@@ -1,5 +1,24 @@
 SCRIPTS=(
-  "brew"
+  "brew",
+  "iterm",
+  "oh-my-zsh",
+  "tmux",
+  "tpm",
+  "docker",
+  "1password",
+  "google-chrome",
+  "harvest",
+  "slack",
+  "mongodb-compass",
+  "notion",
+  "phpstorm",
+  "poedit",
+  "tableplus",
+  "insomnia",
+  "xcode",
+  "spotify",
+  "whatsapp",
+  "zoomus",
 )
 
 for script in $SCRIPTS; do
