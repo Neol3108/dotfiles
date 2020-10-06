@@ -597,6 +597,13 @@
 					<key>Text</key>
 					<string>9</string>
 				</dict>
+				<key>0x6b-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Text</key>
+					<string>clear\n</string>
+				</dict>
 				<key>0x7f-0x100000</key>
 				<dict>
 					<key>Action</key>
@@ -967,7 +974,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>AA387297-FC2A-47CA-ABD4-8E3DC3E51729</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>533</integer>
+	<integer>535</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>587126092.84287703</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -1762,7 +1773,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-10-03T14:52:26Z</date>
+	<date>2020-10-05T12:43:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
