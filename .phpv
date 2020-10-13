@@ -1,0 +1,38 @@
+VERSIONS=()
+
+ls /usr/local/Cellar | grep php | while read folder; do;
+    VERSIONS+=$(ls /usr/local/Cellar/$folder | head -n1 | sed 's/\(^[[:digit:]]\{1,\}.[[:digit:]]\{1,\}\).*/\1/')
+done;
+
+max=${VERSIONS[0]}
+for n in "${VERSIONS[@]}" ; do
+    ((n > max)) && max=$n
+done
+
+phpv() {
+    number=$1
+
+    for version in $VERSIONS; do
+        if [ $1 = "php@${version}" ]; then
+            number=$version
+        fi
+
+	    brew services stop php@$version &> /dev/null
+	    brew unlink php@$version &> /dev/null
+    done
+
+    brew link --force --overwrite $1
+    brew services start $1
+
+    if [ $number = $max ]; then
+        valet use php
+    else
+        valet use $1
+    fi
+
+    # valet install
+}
+
+for version in $VERSIONS; do
+    alias php${version/\./}="phpv php@$version"
+done
