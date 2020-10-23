@@ -1,0 +1,10 @@
+# Dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dotfiles config --local status.showUntrackedFiles no
+
+# Artisan (Laravel)
+alias art="php artisan"
+alias migrate="art migrate"
+alias migratef="art migrate:fresh"
+alias migrater="art migrate:refresh"
+
