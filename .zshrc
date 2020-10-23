@@ -100,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.aliases
 source ~/.phpv
+export PATH=$PATH:~/.composer/vendor/bin
