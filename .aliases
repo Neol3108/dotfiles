@@ -8,3 +8,4 @@ alias migrate="art migrate"
 alias migratef="art migrate:fresh"
 alias migrater="art migrate:refresh"
 
+alias tinker="art tinker"

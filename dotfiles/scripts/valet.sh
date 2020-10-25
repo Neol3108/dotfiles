@@ -2,6 +2,7 @@ echo "Installing Valet"
 
 composer global require laravel/valet
 valet install
+valet trust
 
 if [ ! -d "${HOME}/sites" ]; then
     OLD=$PWD

@@ -101,3 +101,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.phpv
 export PATH=$PATH:~/.composer/vendor/bin
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
