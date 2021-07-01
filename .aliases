@@ -1,11 +1,33 @@
+# PHP
+alias php7.2='$(brew --prefix php@7.2)/bin/php'
+alias php7.3='$(brew --prefix php@7.3)/bin/php'
+alias php7.4='$(brew --prefix php@7.4)/bin/php'
+alias php8.0='$(brew --prefix php@8.0)/bin/php'
+
+# Composer
+alias composer7.2='php7.2 $(which composer)'
+alias composer7.3='php7.3 $(which composer)'
+alias composer7.4='php7.4 $(which composer)'
+alias composer8.0='php8.0 $(which composer)'
+
+# Artisan
+alias a='php artisan'
+alias a7.2='php7.2 artisan'
+alias a7.3='php7.3 artisan'
+alias a7.4='php7.4 artisan'
+alias a8.0='php8.0 artisan'
+
+# Artisan commands
+alias migrate='a migrate'
+alias migrate:fresh='a migrate:fresh'
+alias migrate:refresh='a migrate:refresh'
+alias migrate:rollback='a migrate:rollback'
+
+alias tinker='a tinker'
+
+alias wpp='a wp:pull'
+alias wpa='a wp:pull all'
+
 # Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
-
-# Artisan (Laravel)
-alias art="php artisan"
-alias migrate="art migrate"
-alias migratef="art migrate:fresh"
-alias migrater="art migrate:refresh"
-
-alias tinker="art tinker"
